@@ -15,3 +15,5 @@ deb https://apt.dockerproject.org/repo ubuntu-xenial main
 echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
 
 Acquire::https::proxy "https://195.87.49.10:8080/";
+
+sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
