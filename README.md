@@ -10,3 +10,6 @@ sudo apt-key adv \
 test2
 
 deb https://apt.dockerproject.org/repo ubuntu-xenial main
+
+
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
