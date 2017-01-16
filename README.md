@@ -26,4 +26,3 @@ curl -L https://github.com/docker/machine/releases/download/v0.9.0-rc2/docker-ma
   
 curl -L https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_darwin-amd64 > /usr/local/bin/docker-machine
 chmod +x /usr/local/bin/docker-machine
-....................................................................
