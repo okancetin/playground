@@ -17,3 +17,8 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc
 Acquire::https::proxy "https://195.87.49.10:8080/";
 
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+
+
+curl -L https://github.com/docker/machine/releases/download/v0.9.0-rc2/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+  chmod +x /tmp/docker-machine &&
+  sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
