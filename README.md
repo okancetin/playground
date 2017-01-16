@@ -22,3 +22,7 @@ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 curl -L https://github.com/docker/machine/releases/download/v0.9.0-rc2/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
   chmod +x /tmp/docker-machine &&
   sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+  
+  
+curl -L https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_darwin-amd64 > /usr/local/bin/docker-machine
+chmod +x /usr/local/bin/docker-machine
